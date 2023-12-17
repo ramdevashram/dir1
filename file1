@@ -1,0 +1,19 @@
+#!/bin/bash
+echo "enter the marks"
+read mark
+if [ $mark -gt 90 ]
+then 
+   echo "Distinction"
+elif [ $mark -ge 75 ] && [ $mark -le 90 ]
+then 
+   echo "First class"
+elif [ $mark -ge 60 ] && [ $mark -le 75 ]
+then 
+    echo "Second class"
+elif [ $mark -ge 35 ] && [ $mark  -le 60 ]
+then 
+   echo "pass"
+elif [ $mark -lt 35 ]
+then 
+   echo "fail"
+fi
